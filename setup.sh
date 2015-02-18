@@ -5,12 +5,12 @@
 # Install nvm: node-version manager
 # https://github.com/creationix/nvm
 sudo apt-get install -y git-core
-curl https://raw.github.com/creationix/nvm/master/install.sh | sh
+curl https://raw.githubusercontent.com/creationix/nvm/v0.23.3/install.sh | bash
 
 # Load nvm and install latest production node
 source $HOME/.nvm/nvm.sh
-nvm install v0.10.12
-nvm use v0.10.12
+nvm install stable
+nvm use stable
 
 # Install jshint to allow checking of JS code within emacs
 # http://jshint.com/
@@ -21,10 +21,10 @@ npm install -g jshint
 sudo apt-get install -y rlwrap
 
 # Install emacs24
-# https://launchpad.net/~cassou/+archive/emacs
-sudo apt-add-repository -y ppa:cassou/emacs
+# http://askubuntu.com/questions/297170/how-to-install-emacs-24-3-on-ubuntu
+sudo apt-add-repository -y ppa:ubuntu-elisp/emacs
 sudo apt-get update
-sudo apt-get install -y emacs24 emacs24-el emacs24-common-non-dfsg
+sudo apt-get install emacs-snapshot emacs-snapshot-el
 
 # Install Heroku toolbelt
 # https://toolbelt.heroku.com/debian

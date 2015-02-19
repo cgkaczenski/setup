@@ -10,5 +10,5 @@ sudo apt-get -f --force-yes --yes install
 
 #install management plugin
 sudo rabbitmq-plugins enable rabbitmq_managment
-sudo services rabbitmq-server restart
+sudo service rabbitmq-server restart
 
